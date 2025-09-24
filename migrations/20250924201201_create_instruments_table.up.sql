@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS instruments (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    isin TEXT NOT NULL UNIQUE,
+    name TEXT NOT NULL,
+    base_currency CHAR(3) NOT NULL
+);
