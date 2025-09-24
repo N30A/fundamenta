@@ -1,0 +1,1 @@
+ALTER TABLE IF EXISTS instruments DROP COLUMN IF EXISTS provider;
