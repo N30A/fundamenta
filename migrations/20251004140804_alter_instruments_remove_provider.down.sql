@@ -1,0 +1,1 @@
+ALTER TABLE IF EXISTS instruments ADD COLUMN provider TEXT;
