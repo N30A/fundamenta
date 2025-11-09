@@ -1,5 +1,5 @@
 using FluentValidation;
-using Fundamenta.Api.Extensions;
+using Fundamenta.Api.Host.Extensions;
 
 DotNetEnv.Env.Load();
 

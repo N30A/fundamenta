@@ -1,9 +1,6 @@
-using System.Data;
-using Npgsql;
+namespace Fundamenta.Api.Host;
 
-namespace Fundamenta.Api.Extensions;
-
-public static class DependencyInjection
+public static class ConnectionStringBuilder
 {
     private static string GetEnvironmentVariableOrThrow(IConfiguration config, string key)
     {
@@ -17,7 +14,7 @@ public static class DependencyInjection
         return value;
     }
     
-    private static string BuildConnectionString(IConfiguration config)
+    public static string Build(IConfiguration config)
     {   
         string? connectionString = config.GetValue<string>("DB:CONNECTION_STRING");
 
@@ -40,26 +37,5 @@ public static class DependencyInjection
         }
         
         return connectionString;
-    }
-    
-    public static IServiceCollection AddDatabase(this IServiceCollection services, IConfiguration config)
-    {
-        string connectionString = BuildConnectionString(config);
-        
-        try
-        {   
-            using (var connection = new NpgsqlConnection(connectionString))
-            {   
-                connection.Open();
-            }
-            
-            services.AddTransient<IDbConnection>(_ => new NpgsqlConnection(connectionString));
-        }
-        catch (Exception ex)
-        {
-            throw new InvalidOperationException("Could not connect to the database.", ex);
-        }
-        
-        return services;
     }
 }
