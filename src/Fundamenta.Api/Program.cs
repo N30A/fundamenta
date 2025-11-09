@@ -1,4 +1,5 @@
 using FluentValidation;
+using Fundamenta.Api;
 using Fundamenta.Api.Host.Extensions;
 
 DotNetEnv.Env.Load();
@@ -12,6 +13,7 @@ builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
 var app = builder.Build();
 
+app.MapEndpoints();
 app.AddScalar();
 app.UseHttpsRedirection();
 app.Run();
