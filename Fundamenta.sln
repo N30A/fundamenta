@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.Api", "Fundamenta.Api\Fundamenta.Api.csproj", "{23509E4E-F066-41F3-A787-91E893EC8323}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.Api", "src/Fundamenta.Api\Fundamenta.Api.csproj", "{23509E4E-F066-41F3-A787-91E893EC8323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.DataImport", "Fundamenta.DataImport\Fundamenta.DataImport.csproj", "{9A022F07-6DEC-44D2-BFFD-DA519574FEF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.DataImport", "src/Fundamenta.DataImport\Fundamenta.DataImport.csproj", "{9A022F07-6DEC-44D2-BFFD-DA519574FEF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.Models", "Fundamenta.Models\Fundamenta.Models.csproj", "{964F11C9-9191-455D-9CA9-B5AC4CED96DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.Models", "src/Fundamenta.Models\Fundamenta.Models.csproj", "{964F11C9-9191-455D-9CA9-B5AC4CED96DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.DataImport.Console", "Fundamenta.DataImport.Console\Fundamenta.DataImport.Console.csproj", "{E9DBFE4D-472E-4C19-8CBC-8AE8EE3D5A0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.DataImport.Console", "src/Fundamenta.DataImport.Console\Fundamenta.DataImport.Console.csproj", "{E9DBFE4D-472E-4C19-8CBC-8AE8EE3D5A0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.DataAccess", "Fundamenta.DataAccess\Fundamenta.DataAccess.csproj", "{C6A7A6A9-241C-4B25-97F2-4B4A587D1847}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamenta.DataAccess", "src/Fundamenta.DataAccess\Fundamenta.DataAccess.csproj", "{C6A7A6A9-241C-4B25-97F2-4B4A587D1847}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
