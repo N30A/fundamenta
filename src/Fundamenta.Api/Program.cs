@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 builder.Services.AddDatabase(builder.Configuration);
+builder.Services.ConfigureJsonSerializer();
 
 var app = builder.Build();
 
